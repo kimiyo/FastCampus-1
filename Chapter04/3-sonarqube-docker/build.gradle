@@ -78,7 +78,6 @@ jib {
     }
     to {
         image = '813297824298.dkr.ecr.ap-northeast-2.amazonaws.com/test'
-        credHelper = 'ecr-login'
         tags = ['1.0']
     }
     container {
