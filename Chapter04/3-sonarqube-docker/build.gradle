@@ -62,11 +62,11 @@ sonarqube {
       property "sonar.exclusions", "**/generated-*/**/*"
       property "sonar.projectKey", "org.sonarqubeJacocoCodeCoverage"
       property "sonar.reportPath" , "${project.buildDir}/jacoco/test.exec"
-      property "sonar.host.url", "http://<SonarQube Private IP>:9000"
+      property "sonar.host.url", "http://http://3.39.25.244:9000"
       property "sonar.sources", "src/main/java"
       property "sonar.tests", "src/test/java"
-      property "sonar.login", "<SonarQube ID>"
-      property "sonar.password", "<SonarQube PW>"
+      property "sonar.login", "test"
+      property "sonar.password", "Kim!202203"
   }
 }
 
@@ -77,7 +77,7 @@ jib {
         image = 'adoptopenjdk/openjdk11:alpine-jre'
     }
     to {
-        image = '<AWS ECR URL>/<Image Repository Name>'
+        image = '813297824298.dkr.ecr.ap-northeast-2.amazonaws.com/test'
         tags = ['<Image Tag Name>']
     }
     container {
